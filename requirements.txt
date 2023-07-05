@@ -1,1 +1,2 @@
 Flask==2.2.2
+pip install selenium==4.1.3
