@@ -25,7 +25,7 @@ async def automate():
 
             await asyncio.sleep(0)  # Allow other tasks to run (if any)
 
-            browser.get('https://calendly.com')
+            browser.get(url)
             inputEl = browser.find_element_by_id('full_name_input').send_keys(name)
             inputEl = browser.find_element_by_id('email_input').send_keys(email)
             inputEl.submit()
